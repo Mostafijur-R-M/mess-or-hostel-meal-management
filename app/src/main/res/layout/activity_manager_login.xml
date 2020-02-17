@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerLoginActivity"
+    android:background="@mipmap/ic_login_bg"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gravity="center"
+        android:background="@color/DarkGoldenrod"
+        android:layout_margin="20sp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_logo"
+            android:scaleType="centerCrop"/>
+
+        <EditText
+            android:id="@+id/manager_login_phone_et_id"
+            android:layout_width="match_parent"
+            android:hint="Enter Phone Number"
+            android:textColorHint="@color/White"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/manager_login_pass_et_id"
+            android:layout_width="match_parent"
+            android:hint="Enter Password"
+            android:textColorHint="@color/White"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/manager_login_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login as a Manager"
+            android:background="@color/DarkOliveGreen"
+            android:textAllCaps="false"
+            android:padding="8sp"/>
+    </LinearLayout>
+
+</LinearLayout>
